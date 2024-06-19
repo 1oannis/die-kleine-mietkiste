@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarThumbVertical="@color/pink"
+    tools:context=".ui.warenkorb.WarenkorbFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/warenkorb_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/warenkorb_description"
+            android:textAppearance="@style/circle_title" />
+
+        <ImageView
+            android:id="@+id/black_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/account_separation_line"
+            android:src="@drawable/black_line" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/warenkorb_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/produkt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kinderbett_classic"
+                android:textAppearance="@style/circle_title"
+                app:layout_constraintBottom_toTopOf="@+id/icon_delete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/warenkorb_bett"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/icon_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="80dp"
+                android:contentDescription="@string/favorit_description"
+                android:src="@drawable/delete"
+                app:layout_constraintStart_toEndOf="@+id/icon_favorite"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/icon_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="80dp"
+                android:contentDescription="@string/favorit_description"
+                android:src="@drawable/ic_heart_black_24dp"
+                app:layout_constraintStart_toEndOf="@+id/warenkorb_bett"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/warenkorb_bett"
+                android:layout_width="151dp"
+                android:layout_height="134dp"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/favorit_description"
+                android:scaleType="fitXY"
+                android:src="@drawable/bed1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="97dp"
+                android:text="@string/merken"
+                android:textAppearance="@style/footer"
+                app:layout_constraintStart_toEndOf="@+id/icon_favorite"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="97dp"
+                android:text="@string/loeschen"
+                android:textAppearance="@style/footer"
+                app:layout_constraintStart_toEndOf="@+id/icon_delete"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/black_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/account_separation_line"
+            android:src="@drawable/black_line" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/warenkorb_kasse" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name" translatable="false">Die Kleine Mietkiste</string>
+    <string name="title_startseite" translatable="false">Start</string>
+    <string name="title_suchen">Suchen</string>
+    <string name="title_warenkorb">Warenkorb</string>
+    <string name="title_favoriten">Favoriten</string>
+    <string name="title_produktkategorien">Kleine Mietkiste - Produkt-Kategorien</string>
+    <string name="title_kinderzimmer">Kinderzimmer</string>
+    <string name="kinderzimmer_content">Kinderzimmer Produkte</string>
+    <string name="title_spielspaß">Spiel &amp; Spaß</string>
+    <string name="spielspaß_content">Spiel &amp; Spaß Produkte</string>
+    <string name="title_unterwegs">Unterwegs</string>
+    <string name="unterwegs_content">Unterwegs Produkte</string>
+    <string name="artikel1">Bett1</string>
+    <string name="artikel2">Bett2</string>
+    <string name="artikel3">Bett3</string>
+    <string name="artikel4">Bett4</string>
+    <string name="artikel5">Bett5</string>
+    <string name="artikel6">Bett6</string>
+    <string name="kinderzimmer_betten">Kinderzimmer > Betten</string>
+    <string name="filtern_suchen">FILTERN &amp; SUCHEN</string>
+    <string name="mindestmietdauer">Wähle deine Mindestmietdauer:</string>
+    <string name="jetzt_mieten">JETZT MIETEN 30,00 €</string>
+    <string name="bewertung">Bewertung</string>
+    <string name="produktbeschreibung">Produktbeschreibung&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;v</string>
+    <string name="preise_und_mietdauer">Preise &amp; Mietdauer&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;></string>
+    <string name="lieferzeiten">Lieferzeiten&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;></string>
+    <string name="bett1_beschreibung">Dies ist ein stabiles Bett in einem zeitlosen Design der Marke Schrainer. Das Bett kommt zusammen mit der passenden Comfort Matratze von Emma.
+Maße: 120 x 70 x 95 cm
+Altersempfehlung: 0 bis 3 Jahre</string>
+    <string name="monate">12&#160;&#160;&#160;&#160;6&#160;&#160;&#160;&#160;3</string>
+    <string name="monat">18</string>
+    <string name="suchen_frage">Wonach suchst du?</string>
+    <string name="account_ciricle_favoriten">Favoriten</string>
+    <string name="title_account" translatable="false">Account</string>
+    <string name="account_ciricle_faq" translatable="false">FAQ</string>
+    <string name="account_ciricle_mieten">Mieten</string>
+    <string name="account_default_count" translatable="false">1</string>
+    <string name="account_questionmark_circle_faq" translatable="false">\?</string>
+    <string name="account_separation_line">Linie</string>
+    <string name="account_subsection_meine_mieten">Meine Mieten</string>
+    <string name="account_subsection_meine_daten">Meine Daten</string>
+    <string name="account_subsection_bewertungen">Meine Bewertungen</string>
+    <string name="account_subsection_reklamationen">Meine Reklamationen</string>
+    <string name="account_subsection_einstellungen">Einstellungen</string>
+    <string name="account_subsection_hilfe">Hilfe</string>
+    <string name="arrow">Pfeillinks</string>
+    <string name="icon_filter">icon filter</string>
+    <string name="suchlupe">Suchlupe</string>
+    <string name="funktionsweise">So funktioniert\'s</string>
+    <string name="function1">Entdecke alles, was du dir für dein Kind erträumst.</string>
+    <string name="function2">Entscheide dich für eine Mietdauer und ab in den Warenkorb.</string>
+    <string name="function3">Wir liefern schnell und zuverlässig. Du entscheidest, ob wir deine Möbel aufbauen oder nicht.</string>
+    <string name="function4">Nutze die Möbel solange, wie du sie brauchst.</string>
+    <string name="function5">Danach machst du einen Termin mit uns aus. Wir holen die Möbel abgebaut ab oder du buchst unseren Abbauservice mit dazu.</string>
+    <string name="account_subsection_arrow" translatable="false">\></string>
+    <string name="account_footer" translatable="false">Account Footer</string>
+    <string name="impressum_agb">AGB</string>
+    <string name="impressum_datenschutz">Datenschutz</string>
+    <string name="impressum_impressum">Impressum</string>
+    <string name="impressum_teilnahmebedingungen">Teilnahmebedingungen</string>
+    <string name="startseite_banner">Willkommen!</string>
+    <string name="startseite_so_funktionierts">So funktioniert\'s!</string>
+    <string name="startseite_unsere_ausstattungspakete">Unsere Ausstattungspakete</string>
+    <string name="startseite_unsere_produkt_kategorien">Unsere Produktkategorien</string>
+    <string name="startseite_unsere_angebotskiste">Unsere Angebotskiste</string>
+    <string name="startseite_hilfe_und_support">Hilfe und Support</string>
+    <string name="startseite_angebote_fuer_dich">Angebote für dich</string>
+    <string name="hilfeseiten_title">So funktioniert\'s</string>
+    <string name="pakete">Unsere Ausstattungspakete</string>
+    <string name="paket_s">Ausstattungspaket S</string>
+    <string name="paket_m">Ausstattungspaket M</string>
+    <string name="paket_l">Ausstattungspaket L</string>
+    <string name="description_paket_s">Bett\nSchrank\nEin Spielzeug Deiner Wahl</string>
+    <string name="description_paket_m">Bett\nSchrank\nKommode\nKindersitz / Babyschale\nEin Spielzeug Deiner Wahl</string>
+    <string name="description_paket_l">Bett\nSchrank\nKommode\nKindersitz / Babyschale\nWickeltisch / Kinderfahrrad\nDrei Spielzeuge Deiner Wahl</string>
+    <string name="s">S</string>
+    <string name="m">M</string>
+    <string name="l">L</string>
+    <string name="hilfe">Hilfe</string>
+    <string name="faq_meistgelesen">Meistgelesene Seiten</string>
+    <string name="faq_frage1"><u>Wie kann ich eine Bestellung aufgeben?</u></string>
+    <string name="faq_frage2"><u>Kann ich die Mietdauer verlängern?</u></string>
+    <string name="faq_frage3"><u>Wie kann ich den Auf- und Abbauservice buchen?</u></string>
+    <string name="faq_frage4"><u>Was muss ich nach dem Ende der Mietdauer tun?</u></string>
+    <string name="faq_info1">Bestellungen &amp; Zahlungen</string>
+    <string name="faq_info2">Versand &amp; Lieferungen</string>
+    <string name="faq_info3">Sendungsverfolgung</string>
+    <string name="faq_info4">Auf- und Abbauservice</string>
+    <string name="bz1">Bestellen</string>
+    <string name="bz2">Zahlungsmethoden</string>
+    <string name="bz3">Zahlung</string>
+    <string name="bz4">Rückerstattung &amp; Storno</string>
+    <string name="unterklappen" translatable="false">v</string>
+    <string name="zahlungsmethoden"><u>Welche Zahlungsmethoden gibt es?</u></string>
+    <string name="katalog_title">Unsere Produkte</string>
+    <string name="produkt_detail_title">Produkt Details</string>
+    <string name="produkt_detail_name">Produktname</string>
+    <string name="produkt_detail_rating">Produkt Rating</string>
+    <string name="favorit_überschrift">Deine gespeicherten Produkte</string>
+    <string name="favorit_description">Favorit Bett</string>
+    <string name="warenkorb_überschrift">Dein Warenkorb</string>
+    <string name="warenkorb_description">Deine ausgewählten Produkte</string>
+    <string name="warenkorb_kasse">ZUR KASSE</string>
+    <string name="merken"><u>MERKEN</u></string>
+    <string name="loeschen"><u>LÖSCHEN</u></string>
+    <string name="kinderbett_classic">Kinderbett Classic</string>
+    <string name="angebot_banner_text">Angebote für Dich</string>
+</resources>

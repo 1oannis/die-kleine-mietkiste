@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_startseite">
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.diekleinemietkiste.app.ui.account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account">
+        <action
+            android:id="@+id/action_navigation_account_to_navigation_favoriten"
+            app:destination="@id/navigation_favoriten" />
+        <action
+            android:id="@+id/action_navigation_account_to_faqFragment"
+            app:destination="@id/faqFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_favoriten"
+        android:name="com.diekleinemietkiste.app.ui.favoriten.FavoritenFragment"
+        android:label="@string/title_favoriten"
+        tools:layout="@layout/fragment_favoriten" >
+        <action
+            android:id="@+id/action_navigation_favoriten_to_produktDetailFragment"
+            app:destination="@id/produktDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_startseite"
+        android:name="com.diekleinemietkiste.app.ui.startseite.StartseiteFragment"
+        android:label="@string/title_startseite"
+        tools:layout="@layout/fragment_startseite">
+        <action
+            android:id="@+id/action_navigation_startseite_to_navigation_suchen"
+            app:destination="@id/navigation_suchen" />
+        <action
+            android:id="@+id/action_navigation_startseite_to_hilfeseitenFragment"
+            app:destination="@id/hilfeseitenFragment" />
+        <action
+            android:id="@+id/action_navigation_startseite_to_faqFragment"
+            app:destination="@id/faqFragment" />
+        <action
+            android:id="@+id/action_navigation_startseite_to_ausstattungspaketeFragment"
+            app:destination="@id/ausstattungspaketeFragment" />
+        <action
+            android:id="@+id/action_navigation_startseite_to_produktDetailFragment"
+            app:destination="@id/produktDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_suchen"
+        android:name="com.diekleinemietkiste.app.ui.suchen.SuchenFragment"
+        android:label="@string/title_suchen"
+        tools:layout="@layout/fragment_suchen">
+        <action
+            android:id="@+id/action_navigation_suchen_to_katalogFragment"
+            app:destination="@id/katalogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_warenkorb"
+        android:name="com.diekleinemietkiste.app.ui.warenkorb.WarenkorbFragment"
+        android:label="@string/title_warenkorb"
+        tools:layout="@layout/fragment_warenkorb" >
+        <action
+            android:id="@+id/action_navigation_warenkorb_to_produktDetailFragment"
+            app:destination="@id/produktDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/katalogFragment"
+        android:name="com.diekleinemietkiste.app.ui.katalog.KatalogFragment"
+        android:label="@string/katalog_title"
+        tools:layout="@layout/fragment_katalog">
+        <argument
+            android:name="produktartId"
+            app:argType="integer" />
+        <argument
+            android:name="produktartName"
+            app:argType="string" />
+        <argument
+            android:name="kategorieName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_katalogFragment_to_produktDetailFragment"
+            app:destination="@id/produktDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hilfeseitenFragment"
+        android:name="com.diekleinemietkiste.app.ui.hilfeseiten.HilfeseitenFragment"
+        android:label="@string/hilfeseiten_title"
+        tools:layout="@layout/fragment_hilfeseiten" />
+    <fragment
+        android:id="@+id/faqFragment"
+        android:name="com.diekleinemietkiste.app.ui.faq.FaqFragment"
+        android:label="@string/startseite_hilfe_und_support"
+        tools:layout="@layout/fragment_faq" />
+    <fragment
+        android:id="@+id/ausstattungspaketeFragment"
+        android:name="com.diekleinemietkiste.app.ui.ausstattungspakete.AusstattungspaketeFragment"
+        android:label="@string/pakete"
+        tools:layout="@layout/fragment_ausstattungspakete" />
+    <fragment
+        android:id="@+id/produktDetailFragment"
+        android:name="com.diekleinemietkiste.app.ui.produktDetail.ProduktDetailFragment"
+        android:label="@string/produkt_detail_title"
+        tools:layout="@layout/fragment_produkt_detail" >
+        <argument
+            android:name="produktName"
+            app:argType="string" />
+    </fragment>
+</navigation>

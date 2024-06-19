@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.produktDetail.ProduktDetailFragment">
+
+    <TextView
+        android:id="@+id/produkt_detail_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:text="@string/produkt_detail_name"
+        android:textAppearance="@style/title"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@color/pink">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/produkt_detail_image"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:contentDescription="@string/artikel1"
+                app:srcCompat="@drawable/bett1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/produkt_detail_mietdauer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/mindestmietdauer"
+                    android:textAppearance="@style/circle_title"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_mietdauer_18"
+                        android:layout_width="52dp"
+                        android:layout_height="48dp"
+                        android:backgroundTint="@color/pink_variant"
+                        android:text="@string/monat"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/restliche_monate"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/monate"
+                        android:textAppearance="@style/text"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/mieten_button"
+                        android:layout_width="228dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="0dp"
+                        android:backgroundTint="@color/babyblau"
+                        android:text="@string/jetzt_mieten"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/zu_favoriten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:contentDescription="@string/artikel1"
+                        app:srcCompat="@drawable/ic_heart_black_24dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/produkt_rating"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/produkt_detail_rating"
+                    app:srcCompat="@drawable/bewertung" />
+
+                <TextView
+                    android:id="@+id/detail_produktbeschreibung_title"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/produktbeschreibung"
+                    android:textAppearance="@style/text"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/detail_produktbeschreibung"
+                    android:layout_width="311dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/bett1_beschreibung"
+                    android:textAppearance="@style/text"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/detail_preise_mietdauer_title"
+                    android:layout_width="314dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/preise_und_mietdauer"
+                    android:textAppearance="@style/text"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/detail_lieferzeiten_title"
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/lieferzeiten"
+                    android:textAppearance="@style/text"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

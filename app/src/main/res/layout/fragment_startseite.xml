@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.startseite.StartseiteFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/startseite_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/startseite_banner"
+            android:textAlignment="center"
+            android:textAppearance="@style/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/group_so_funktionierts"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:contentDescription="@string/startseite_so_funktionierts"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/black_line_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/black_line_1">
+
+            <ImageView
+                android:id="@+id/icon_so_funktionierts"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/startseite_so_funktionierts"
+                android:src="@drawable/ic_question_exchange_24px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/text_so_funktionierts"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_so_funktionierts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/startseite_so_funktionierts"
+                android:textAlignment="center"
+                android:textAppearance="@style/circle_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon_so_funktionierts"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/group_unsere_produkt_kategorien"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:contentDescription="@string/startseite_unsere_produkt_kategorien"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/black_line_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/black_line_2">
+
+            <ImageView
+                android:id="@+id/icon_unsere_produkt_kategorien"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/startseite_unsere_produkt_kategorien"
+                android:src="@drawable/ic_magnify_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/text_unsere_produkt_kategorien"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_unsere_produkt_kategorien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/startseite_unsere_produkt_kategorien"
+                android:textAlignment="center"
+                android:textAppearance="@style/circle_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon_unsere_produkt_kategorien"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/group_unsere_ausstattungspakete"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:contentDescription="@string/account_subsection_meine_daten"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/black_line_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/black_line_3">
+
+            <ImageView
+                android:id="@+id/icon_unsere_ausstattungspakete"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/account_subsection_meine_mieten"
+                android:src="@drawable/ic_pakete_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/text_unsere_ausstattungspakete"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_unsere_ausstattungspakete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/startseite_unsere_ausstattungspakete"
+                android:textAlignment="center"
+                android:textAppearance="@style/circle_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon_unsere_ausstattungspakete"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/group_unsere_angebotskiste"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:contentDescription="@string/startseite_unsere_angebotskiste"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/black_line_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/black_line_4">
+
+            <ImageView
+                android:id="@+id/icon_unsere_angebotskiste"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/startseite_unsere_angebotskiste"
+                android:src="@drawable/ic_angebote_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/startseite_unsere_angebotskiste"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/startseite_unsere_angebotskiste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/startseite_unsere_angebotskiste"
+                android:textAlignment="center"
+                android:textAppearance="@style/circle_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon_unsere_angebotskiste"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/group_hilfe_und_support"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:contentDescription="@string/startseite_hilfe_und_support"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/black_line_6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/black_line_5">
+
+            <ImageView
+                android:id="@+id/icon_hilfe_und_support"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/startseite_hilfe_und_support"
+                android:src="@drawable/ic_help_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/startseite_hilfe_und_support"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/startseite_hilfe_und_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/startseite_hilfe_und_support"
+                android:textAlignment="center"
+                android:textAppearance="@style/circle_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon_hilfe_und_support"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/black_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/account_separation_line"
+            android:src="@drawable/black_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startseite_banner" />
+
+        <ImageView
+            android:id="@+id/black_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:contentDescription="@string/account_separation_line"
+            android:src="@drawable/black_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/black_line_1" />
+
+        <ImageView
+            android:id="@+id/black_line_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:contentDescription="@string/account_separation_line"
+            android:src="@drawable/black_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/black_line_2" />
+
+        <ImageView
+            android:id="@+id/black_line_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:contentDescription="@string/account_separation_line"
+            android:src="@drawable/black_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/black_line_3" />
+
+        <ImageView
+            android:id="@+id/black_line_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:contentDescription="@string/account_separation_line"
+            android:src="@drawable/black_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/black_line_4" />
+
+        <ImageView
+            android:id="@+id/black_line_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:contentDescription="@string/account_separation_line"
+            android:src="@drawable/black_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/black_line_5" />
+
+        <ImageView
+            android:id="@+id/image_angebote_fuer_dich"
+            android:layout_width="290dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:contentDescription="@string/startseite_angebote_fuer_dich"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/black_line_6"
+            app:srcCompat="@drawable/bett1" />
+
+        <ImageView
+            android:id="@+id/angebots_banner"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/account_separation_line"
+            android:src="@drawable/red_banner"
+            app:layout_constraintBottom_toBottomOf="@+id/image_angebote_fuer_dich"
+            app:layout_constraintEnd_toEndOf="@id/image_angebote_fuer_dich"
+            app:layout_constraintStart_toStartOf="@id/image_angebote_fuer_dich" />
+
+        <TextView
+            android:id="@+id/angebots_banner_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/angebot_banner_text"
+            android:textAppearance="@style/title"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/angebots_banner"
+            app:layout_constraintEnd_toEndOf="@+id/angebots_banner"
+            app:layout_constraintStart_toStartOf="@id/angebots_banner"
+            app:layout_constraintTop_toTopOf="@id/angebots_banner" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

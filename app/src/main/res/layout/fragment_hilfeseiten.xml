@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarThumbVertical="@color/pink"
+    tools:context=".ui.hilfeseiten.HilfeseitenFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/hilfeseiten_bild_1"
+                android:layout_width="161dp"
+                android:layout_height="223dp"
+                android:contentDescription="@string/function5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/function1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="194dp"
+                android:layout_height="77dp"
+                android:text="@string/function1"
+                android:textAppearance="@style/circle_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/hilfeseiten_bild_1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/function2">
+
+            <TextView
+                android:id="@+id/hilfeseite_text_2"
+                android:layout_width="194dp"
+                android:layout_height="77dp"
+                android:text="@string/function2"
+                android:textAppearance="@style/circle_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/hilfeseite_bild_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/hilfeseite_bild_2"
+                android:layout_width="177dp"
+                android:layout_height="180dp"
+                android:contentDescription="@string/function2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hilfeseite_text_2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/function3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/hilfeseite_bild_3"
+                android:layout_width="161dp"
+                android:layout_height="223dp"
+                android:contentDescription="@string/function3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/function2" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="196dp"
+                android:layout_height="128dp"
+                android:text="@string/function3"
+                android:textAppearance="@style/circle_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/hilfeseite_bild_3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hilfeseite_text_4"
+                android:layout_width="194dp"
+                android:layout_height="77dp"
+                android:text="@string/function4"
+                android:textAppearance="@style/circle_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/hilfeseite_bild_4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/hilfeseite_bild_4"
+                android:layout_width="177dp"
+                android:layout_height="180dp"
+                android:contentDescription="@string/function4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hilfeseite_text_4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/function4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/hilfeseite_bild_5"
+                android:layout_width="161dp"
+                android:layout_height="223dp"
+                android:contentDescription="@string/function5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/hilfeseite_text_5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/function5" />
+
+            <TextView
+                android:id="@+id/hilfeseite_text_5"
+                android:layout_width="198dp"
+                android:layout_height="189dp"
+                android:text="@string/function5"
+                android:textAppearance="@style/circle_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/hilfeseite_bild_5"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>
